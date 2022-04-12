@@ -20,10 +20,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-light" style="background-color: #def5c4">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Nome Projeto</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <button class="navbar-toggler" style="background-color: #9cd05f;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
             <div class="offcanvas offcanvas-end" tabindex="-s1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -32,29 +32,22 @@
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
+                    <form>
+                        <input class="form-control" type="text" placeholder="Pesquisar denuncia" aria-label="Search">
+                    </form>
+                    <br>
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                             <a class="nav-item">Página Inicial</a>
                             <br>
-                            <a class="nav-item">Pontos de Coleta</a>
+                            <a class="nav-item">Denunciar</a>
                             <br>
-                            <a class="nav-item">Rastreio de recicláveis</a>
+                            <a class="nav-item">Acompanhar denúncia</a>
 
                         </li>
-                        <!-- <li class="nav-item dropdown">
-              <a class="nav-item dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul> -->
-                        </li>
+
                     </ul>
+                    <br>
                     <div class="rodape-sair" style="text-align: right;">
                         <h7>Nome Usuário</h7>
                         <button class="btn btn-danger" id="teste" type="submit">Sair</button>
@@ -63,6 +56,9 @@
             </div>
         </div>
     </nav>
+
+    <!-- botão denunciar -->
+    <div id="bmc-wbtn" style="display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: rgb(121, 214, 181); color: white; border-radius: 32px; position: fixed; right: 18px; bottom: 18px; box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px; z-index: 9999; cursor: pointer; font-weight: 600; transition: all 0.2s ease 0s;"><img src="https://cdn.buymeacoffee.com/widget/assets/coffee%20cup.svg" alt="Buy Me A Coffee" style="height: 40px; width: 40px; margin: 0; padding: 0;"></div>
 
     <h1>To Do List</h1>
     <p>Nova Tarefa:
